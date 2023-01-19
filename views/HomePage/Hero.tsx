@@ -14,11 +14,10 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>the coolest, saas product you have ever seen</CustomOverTitle>
-        <Heading>QUACK AI</Heading>
+        <CustomOverTitle>the coolest SaaS product you have ever seen</CustomOverTitle>
+        <Heading>Lifting tech teams to development harmony</Heading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
+          Quack AI is here to help tech teams define, adjust & spread coding guidelines consistently & efficiently. We’re here for teams who want efficient, clean and harmonious code across their organization.
         </Description>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>
