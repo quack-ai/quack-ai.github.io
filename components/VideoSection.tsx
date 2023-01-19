@@ -5,19 +5,20 @@ import { media } from 'utils/media';
 import Container from './Container';
 import OverTitle from './OverTitle';
 import RichText from './RichText';
+import YoutubeVideo from 'components/YoutubeVideo';
 
-export interface BasicSectionProps {
-  imageUrl: string;
+export interface VideoSectionProps {
+  youtubeUrl: string;
   title: string;
   overTitle: string;
   reversed?: boolean;
 }
 
-export default function BasicSection({ imageUrl, title, overTitle, reversed, children }: PropsWithChildren<BasicSectionProps>) {
+export default function VideoSection({ youtubeUrl, title, overTitle, reversed, children }: PropsWithChildren<VideoSectionProps>) {
   return (
     <BasicSectionWrapper reversed={reversed}>
       <ImageContainer>
-        <NextImage src={imageUrl} alt={title} layout="fill" objectFit="cover" />
+        <YoutubeVideo title={title} url={youtubeUrl} />
       </ImageContainer>
       <ContentContainer>
         <CustomOverTitle>{overTitle}</CustomOverTitle>
@@ -73,7 +74,7 @@ const ContentContainer = styled.div`
   flex: 1;
 `;
 
-type Props = Pick<BasicSectionProps, 'reversed'>;
+type Props = Pick<VideoSectionProps, 'reversed'>;
 const BasicSectionWrapper = styled(Container)`
   display: flex;
   align-items: center;
