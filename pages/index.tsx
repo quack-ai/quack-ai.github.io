@@ -9,7 +9,7 @@ import YoutubeVideo from 'components/YoutubeVideo';
 import Hero from 'views/HomePage/Hero';
 import SectionTitle from 'components/SectionTitle';
 
-export default function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Homepage() {
   return (
     <>
       <Head>
