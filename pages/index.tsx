@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import VideoSection from 'components/VideoSection';
 import Link from 'components/Link';
 import { EnvVars } from 'env';
-import { getAllPosts } from 'utils/postsFetcher';
 import Cta from 'views/HomePage/Cta';
 import YoutubeVideo from 'components/YoutubeVideo';
 import Hero from 'views/HomePage/Hero';
@@ -76,11 +75,3 @@ const WhiteBackgroundContainer = styled.div`
     margin-top: 15rem;
   }
 `;
-
-export async function getStaticProps() {
-  return {
-    props: {
-      posts: await getAllPosts(),
-    },
-  };
-}
