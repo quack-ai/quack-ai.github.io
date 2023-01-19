@@ -20,7 +20,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <title>{EnvVars.SITE_NAME}</title>
         <meta
           name="description"
-          content="Tempor nostrud velit fugiat nostrud duis incididunt Lorem deserunt est tempor aute dolor ad elit."
+          content="Automating the dull feedback types of code reviews using deep learning in order to let humans focus on the stimulating parts."
         />
       </Head>
       <HomepageWrapper>
