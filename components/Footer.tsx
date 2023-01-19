@@ -30,12 +30,6 @@ const footerItems: FooterItems = [
       { title: 'Contact', href: '/contact' },
     ],
   },
-  {
-    title: 'Something',
-    items: [
-      { title: 'Features2', href: '/features2' },
-    ],
-  },
 ];
 
 export default function Footer() {
