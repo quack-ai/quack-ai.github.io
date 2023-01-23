@@ -14,19 +14,16 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>the coolest SaaS product you have ever seen</CustomOverTitle>
-        <Heading>Lifting tech teams to development harmony</Heading>
+        <CustomOverTitle>Lifting tech teams to development harmony</CustomOverTitle>
+        <Heading>We automate the dull feedback types of code reviews using deep learning so that tech teams can focus on the stimulating parts.</Heading>
         <Description>
-          Quack AI is here to help tech teams define, adjust & spread coding guidelines consistently & efficiently. We’re here for teams who want efficient, clean and harmonious code across their organization.
+          Quack AI is here to help tech teams define, adjust & spread coding guidelines consistently & efficiently. We’re here for teams who want clean, high performing and harmonious code across their organization.
         </Description>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
+            Join waitlist <span>&rarr;</span>
           </Button>
           <NextLink href="#whitepaper" passHref>
-            <Button transparent>
-              Features <span>&rarr;</span>
-            </Button>
           </NextLink>
         </CustomButtonGroup>
       </Contents>
