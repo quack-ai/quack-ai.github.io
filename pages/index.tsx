@@ -1,13 +1,12 @@
-import { InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
-import VideoSection from 'components/VideoSection';
 import Link from 'components/Link';
+import SectionTitle from 'components/SectionTitle';
+import VideoSection from 'components/VideoSection';
+import YoutubeVideo from 'components/YoutubeVideo';
 import { EnvVars } from 'env';
 import Cta from 'views/HomePage/Cta';
-import YoutubeVideo from 'components/YoutubeVideo';
 import Hero from 'views/HomePage/Hero';
-import SectionTitle from 'components/SectionTitle';
 
 export default function Homepage() {
   return (

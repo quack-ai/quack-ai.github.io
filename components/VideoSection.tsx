@@ -1,11 +1,10 @@
-import NextImage from 'next/image';
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
+import YoutubeVideo from 'components/YoutubeVideo';
 import { media } from 'utils/media';
 import Container from './Container';
 import OverTitle from './OverTitle';
 import RichText from './RichText';
-import YoutubeVideo from 'components/YoutubeVideo';
 
 export interface VideoSectionProps {
   youtubeUrl: string;
