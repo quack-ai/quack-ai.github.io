@@ -23,8 +23,6 @@ export default function Hero() {
           <Button onClick={() => setIsModalOpened(true)}>
             Join waitlist <span>&rarr;</span>
           </Button>
-          <NextLink href="#whitepaper" passHref>
-          </NextLink>
         </CustomButtonGroup>
       </Contents>
       <ImageContainer>
