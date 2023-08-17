@@ -1,4 +1,5 @@
 import { Head, Html, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 const metaTitle = "Quack AI - Your companion for developer onboarding";
 const metaDescription =
@@ -13,10 +14,19 @@ export default function Document() {
         <meta name="description" content={metaDescription} />
         <link rel="canonical" href={metaUrl} />
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="google-site-verification"
-          content="cZlvGhOOJwuH6S4PfF1JE1OBtMXHebL-P2RLsYn__OY"
-        />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4C1Y48B784"
+          async
+        ></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+  
+            gtag('config', 'G-4C1Y48B784');
+          `}
+        </Script>
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:image" content={metaBanner} />
