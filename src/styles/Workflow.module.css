@@ -43,7 +43,8 @@
   font-size: 18px; /* Font size of the description */
 }
 
-@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+@media (max-width: 768px) {
+  /* Adjust the breakpoint as needed */
   .grid {
     flex-direction: column;
   }
