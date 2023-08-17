@@ -1,0 +1,65 @@
+{
+  "name": "quack-website",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "description": "Website of Quack AI",
+  "author": {
+    "name": "F-G Fernandez",
+    "url": "https://github.com/frgfm"
+  },
+  "categories": [
+    "Programming Languages",
+    "Machine Learning",
+    "Education"
+  ],
+  "keywords": [
+    "ai",
+    "assistant",
+    "contribution",
+    "quackai",
+    "deep learning",
+    "llm",
+    "copilot",
+    "chatgpt",
+    "openai"
+  ],
+  "icon": "public/quack.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quack-ai/quack-ai.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/quack-ai/quack-ai.github.io/issues",
+    "email": "support@quack-ai.com"
+  },
+  "homepage": "https://quack-ai.com",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --ext .tsx",
+    "lint:check": "eslint . --ext .ts",
+    "lint:fix": "eslint --fix . --ext .ts",
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.4.16",
+    "@types/node": "20.5.0",
+    "@types/react": "18.2.20",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-next": "^13.4.16",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.2"
+  }
+}

@@ -1,0 +1,41 @@
+.backedBySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.logoGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; /* Prevents the logos from wrapping into multiple lines */
+  max-width: 100%; /* Ensures that the grid takes the full width */
+  margin: 0 auto; /* Centers the grid */
+  margin-top: 10px;
+}
+
+.logoCard {
+  flex: 1; /* Takes equal space for each logo */
+  margin: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoCard:hover .logo {
+  filter: grayscale(0%); /* Returns the image to full color when hovered */
+}
+
+@media (max-width: 768px) {
+  .logoGrid {
+    flex-wrap: wrap; /* Allows the logos to wrap into multiple lines on smaller screens */
+  }
+}
+
+.logo {
+  height: 64px;
+  width: auto;
+  filter: grayscale(100%); /* Makes the image grayscale */
+  transition: filter 0.3s ease; /* Smooth transition for the filter */
+}
