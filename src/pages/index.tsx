@@ -19,6 +19,19 @@ const Home: FC = () => {
     <div className={styles.container}>
       <Navbar />
       <Script src="https://buttons.github.io/buttons.js" async defer></Script>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-4C1Y48B784"
+        async
+      ></Script>
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-4C1Y48B784');
+        `}
+      </Script>
       <main>
         <Hero />
         <Workflow />
