@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { FC } from "react";
 
-import styles from "../styles/Hero.module.css";
 import waveTop from "../../public/wave-top.svg";
+import styles from "../styles/Hero.module.css";
 
 const wideStyle = {
   width: "100%",

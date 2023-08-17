@@ -58,7 +58,6 @@ make run
 
 You can now navigate to [`http://api.localhost:3000`](http://api.localhost:3000) to interact with the website.
 
-
 ## Setup
 
 ### Prerequisites
@@ -70,10 +69,10 @@ You can now navigate to [`http://api.localhost:3000`](http://api.localhost:3000)
 ### Install the extension
 
 Simply run:
+
 ```shell
 yarn build
 ```
-
 
 ## Copying & distribution
 

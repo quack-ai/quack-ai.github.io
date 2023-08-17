@@ -2,12 +2,12 @@ import Image from "next/image";
 import Script from "next/script";
 import { FC } from "react";
 
+import waveBot from "../../public/wave-bottom.svg";
 import Backers from "../components/Backers";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Workflow from "../components/Workflow";
-import waveBot from "../../public/wave-bottom.svg";
 import styles from "../styles/Home.module.css";
 
 const wideStyle = {
