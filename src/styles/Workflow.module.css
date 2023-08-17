@@ -1,0 +1,32 @@
+.workflowSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: #9038ff; /* Background color of section */
+  padding: 20px; /* Padding to give space around blocks */
+}
+
+.workflowStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; /* Width of each block, change according to your needs */
+  padding: 20px; /* Padding inside each block */
+}
+
+.workflowStep .stepTitle,
+.stepDescription {
+  color: white; /* Text color */
+  margin: 5px 0; /* Margin to separate title and description */
+}
+
+.workflowStep .stepTitle {
+  font-size: 24px; /* Font size of the title */
+  font-weight: bold; /* Font weight of the title */
+}
+
+.workflowStep .stepDescription {
+  font-size: 16px; /* Font size of the description */
+}

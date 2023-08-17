@@ -1,0 +1,40 @@
+"ext: public":
+  - public/*
+
+"ext: styles":
+  - src/styles/*
+
+"module: header":
+  - src/pages/_app.tsx
+  - src/pages/_document.tsx
+
+"module: index":
+  - src/pages/index.tsx
+
+"module: navbar":
+  - src/components/Navbar.tsx
+
+"module: hero":
+  - src/components/Hero.tsx
+
+"module: workflow":
+  - src/components/Workflow.tsx
+
+"module: backers":
+  - src/components/Backers.tsx
+
+"topic: build":
+  - package.json
+  - yarn.lock
+  - tsconfig.json
+
+"topic: ci":
+  - .github/*
+
+"topic: documentation":
+  - README.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+
+"type: code quality":
+  - .eslintrc.json
