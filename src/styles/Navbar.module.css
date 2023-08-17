@@ -31,3 +31,17 @@
   /* This pushes the button to the far right */
   margin-left: auto;
 }
+
+@media (max-width: 768px) {
+  .companyName {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .github-button {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+}
