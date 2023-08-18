@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { FC } from "react";
+import { FaDiscord } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 
 import waveTop from "../../public/wave-top.svg";
 import styles from "../styles/Hero.module.css";
@@ -12,11 +14,24 @@ const Hero: FC = () => {
   return (
     <section className={styles.heroSection}>
       <h1 className={styles.title}>
-        AI{" "}
-        <a href="https://marketplace.visualstudio.com/items?itemName=QuackAI.quack-companion">
-          companion
-        </a>{" "}
-        for developer onboarding
+        <Typewriter
+          options={{
+            delay: 50,
+            // loop: true,
+          }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("Quack <a>AI</a>")
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString("AI ")
+              .typeString(
+                "<a href='https://marketplace.visualstudio.com/items?itemName=QuackAI.quack-companion'>companion</a>",
+              )
+              .typeString(" for developer onboarding")
+              .start();
+          }}
+        />
       </h1>
 
       <p className={styles.description}>
@@ -38,12 +53,7 @@ const Hero: FC = () => {
 
         <a href="https://discord.gg/E9rY3bVCWd" className={styles.card}>
           <h3 className={styles.cardTitle}>
-            <img
-              src="/discord.png"
-              alt="Discord Icon"
-              className={styles.icon}
-            />{" "}
-            Discord &rarr;
+            <FaDiscord className={styles.icon} color="#5865F2" /> Discord &rarr;
           </h3>
           <p>Join other developers from the Quack community.</p>
         </a>
