@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { FaGithub, FaDiscord, FaTwitter } from 'react-icons/fa';
 
 import styles from "../styles/Footer.module.css";
 
@@ -12,21 +13,21 @@ const Footer: FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/discord.png" alt="Discord" className={styles.socialIcon} />
+          <FaDiscord className={styles.socialIcon} color="#5865F2" />
         </a>
         <a
           href="https://github.com/quack-ai"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/github.png" alt="GitHub" className={styles.socialIcon} />
+          <FaGithub className={styles.socialIcon} />
         </a>
         <a
           href="https://twitter.com/quack_ai"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/twitter.png" alt="Twitter" className={styles.socialIcon} />
+          <FaTwitter className={styles.socialIcon} color="#1D9BF0" />
         </a>
       </div>
       <style jsx>{`

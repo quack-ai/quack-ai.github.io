@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
+import { FaDiscord } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 
 import waveTop from "../../public/wave-top.svg";
@@ -50,11 +51,7 @@ const Hero: FC = () => {
 
         <a href="https://discord.gg/E9rY3bVCWd" className={styles.card}>
           <h3 className={styles.cardTitle}>
-            <img
-              src="/discord.png"
-              alt="Discord Icon"
-              className={styles.icon}
-            />{" "}
+          <FaDiscord className={styles.icon} color="#5865F2" />{" "}
             Discord &rarr;
           </h3>
           <p>Join other developers from the Quack community.</p>
