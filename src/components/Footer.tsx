@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { FaGithub, FaDiscord, FaTwitter } from 'react-icons/fa';
+import { FaDiscord, FaGithub, FaTwitter } from "react-icons/fa";
 
 import styles from "../styles/Footer.module.css";
 

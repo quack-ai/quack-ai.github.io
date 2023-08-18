@@ -24,9 +24,11 @@ const Hero: FC = () => {
               .typeString("Quack <a>AI</a>")
               .pauseFor(1000)
               .deleteAll()
+              .typeString("AI ")
               .typeString(
-                "AI <a href='https://marketplace.visualstudio.com/items?itemName=QuackAI.quack-companion'>companion</a> for developer onboarding",
+                "<a href='https://marketplace.visualstudio.com/items?itemName=QuackAI.quack-companion'>companion</a>",
               )
+              .typeString(" for developer onboarding")
               .start();
           }}
         />
@@ -51,8 +53,7 @@ const Hero: FC = () => {
 
         <a href="https://discord.gg/E9rY3bVCWd" className={styles.card}>
           <h3 className={styles.cardTitle}>
-          <FaDiscord className={styles.icon} color="#5865F2" />{" "}
-            Discord &rarr;
+            <FaDiscord className={styles.icon} color="#5865F2" /> Discord &rarr;
           </h3>
           <p>Join other developers from the Quack community.</p>
         </a>
