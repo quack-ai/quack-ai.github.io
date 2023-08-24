@@ -7,7 +7,7 @@ export default function Workflow() {
         <div className={styles.workflowStep}>
           <h2 className={styles.stepTitle}>1. Guideline curation</h2>
           <p className={styles.stepDescription}>
-            Manitainers design the contribution flow for the contributors.
+            Maintainers design the contribution flow for the contributors.
           </p>
         </div>
         <div className={styles.workflowStep}>
