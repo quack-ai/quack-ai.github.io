@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FC, useEffect, useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 import styles from "../styles/Navbar.module.css";
 
@@ -25,12 +26,11 @@ const Navbar: FC = () => {
       <div className={styles.ctaButton}>
         {isClient && (
           <a
-            className="github-button"
+            className={styles.githubButton}
             href="https://github.com/quack-ai/companion"
-            data-size="large"
-            data-show-count="false"
             aria-label="Star quack-ai/companion on GitHub"
           >
+            <FaGithub className={styles.githubLogo} />
             Star us on GitHub
           </a>
         )}

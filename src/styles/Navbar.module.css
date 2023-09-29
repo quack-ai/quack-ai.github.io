@@ -45,3 +45,29 @@
     padding: 5px 8px;
   }
 }
+
+.githubButton {
+  background-color: #333333;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.githubButton:hover {
+  background-color: #555555; /* Slightly lighter grey on hover */
+}
+
+.githubLogo {
+  margin-right: 12px; /* Adjust this value based on your preference */
+  width: 24px;
+  height: 24px;
+  /* You can adjust the font-size to change the size of the icon, if needed */
+  font-size: 24px;
+}
