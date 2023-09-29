@@ -130,3 +130,13 @@
   line-height: 1.5;
   font-size: 1.5rem;
 }
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  padding-left: 5px;
+}
+
+.card:hover .arrow {
+  transform: translateX(5px);
+}

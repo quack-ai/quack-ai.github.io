@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FC } from "react";
 import { FaDiscord } from "react-icons/fa";
+import { TbBrandVscode } from "react-icons/tb";
 import Typewriter from "typewriter-effect";
 
 import waveTop from "../../public/wave-top.svg";
@@ -45,15 +46,17 @@ const Hero: FC = () => {
           className={styles.card}
         >
           <h3 className={styles.cardTitle}>
-            <img src="/vscode.svg" alt="VSCode Icon" className={styles.icon} />{" "}
-            VSCode extension &rarr;
+            <TbBrandVscode className={styles.icon} color="#0066b8" /> VSCode
+            extension
+            <span className={styles.arrow}>&rarr;</span>
           </h3>
           <p>Let&apos;s get you started for your next contributions!</p>
         </a>
 
         <a href="https://discord.gg/E9rY3bVCWd" className={styles.card}>
           <h3 className={styles.cardTitle}>
-            <FaDiscord className={styles.icon} color="#5865F2" /> Discord &rarr;
+            <FaDiscord className={styles.icon} color="#5865F2" /> Discord
+            <span className={styles.arrow}>&rarr;</span>
           </h3>
           <p>Join other developers from the Quack community.</p>
         </a>
