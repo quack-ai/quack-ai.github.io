@@ -5,19 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh; /* New Property */
+  min-height: 91vh;
   position: relative;
-  /* background-image: url('/background2.jpg'); */
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: white; /* Or any other color */
 }
 
 .cardTitle {
@@ -46,7 +38,7 @@
   transition:
     color 0.15s ease,
     border-color 0.15s ease;
-  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .card:hover,
@@ -54,6 +46,7 @@
 .card:active {
   color: #9038ff;
   border-color: #9038ff;
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .card h3 {
@@ -75,14 +68,14 @@
 }
 
 .icon {
-  margin-right: 10px; /* Space between the icon and the text */
-  height: 24px; /* Or any other size */
-  width: 24px; /* Or any other size */
-  filter: grayscale(100%) brightness(0); /* Make the icon black */
+  margin-right: 10px;
+  height: 24px;
+  width: 24px;
+  filter: grayscale(100%) brightness(0);
 }
 
 .card:hover .icon {
-  filter: grayscale(0%) brightness(1); /* Remove the grayscale filter */
+  filter: grayscale(0%) brightness(1);
 }
 
 .wave-top {
@@ -129,4 +122,14 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  padding-left: 5px;
+}
+
+.card:hover .arrow {
+  transform: translateX(5px);
 }

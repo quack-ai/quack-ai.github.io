@@ -5,8 +5,8 @@ import styles from "../styles/Footer.module.css";
 
 const Footer: FC = () => {
   return (
-    <footer>
-      <p>Copyright 2023 Quack AI</p>
+    <footer className={styles.footerContainer}>
+      <p>© 2023 Quack Labs, Inc.</p>
       <div className={styles.socialLinks}>
         <a
           href="https://discord.gg/E9rY3bVCWd"
@@ -30,34 +30,6 @@ const Footer: FC = () => {
           <FaTwitter className={styles.socialIcon} color="#1D9BF0" />
         </a>
       </div>
-      <style jsx>{`
-        footer {
-          width: 100%;
-          height: auto;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 1rem; /* Adds some padding around the elements */
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        footer p {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-      `}</style>
     </footer>
   );
 };
