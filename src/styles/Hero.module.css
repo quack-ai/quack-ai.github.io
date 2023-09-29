@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh; /* New Property */
+  min-height: 91vh;
   position: relative;
   /* background-image: url('/background2.jpg'); */
   background-image: linear-gradient(
