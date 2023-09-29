@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FC, useEffect, useState } from "react";
 
 import styles from "../styles/Navbar.module.css";
@@ -12,7 +13,13 @@ const Navbar: FC = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logoSection}>
-        <img src="/quack.png" alt="Quack AI" className={styles.logo} />
+        <Image
+          src="/quack.png"
+          alt="Quack AI"
+          width={64}
+          height={64}
+          className={styles.logo}
+        />
         <span className={styles.companyName}>Quack AI</span>
       </div>
       <div className={styles.ctaButton}>
