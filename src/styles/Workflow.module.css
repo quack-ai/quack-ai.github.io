@@ -5,8 +5,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #9038ff; /* Background color of section */
-  padding: 20px; /* Padding to give space around blocks */
+  background: #9038ff;
+  padding: 20px;
   position: relative;
 }
 
@@ -24,23 +24,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%; /* Width of each block, change according to your needs */
-  padding: 20px; /* Padding inside each block */
+  justify-content: center;
+  width: 30%;
+  padding: 20px;
 }
 
 .workflowStep .stepTitle,
 .stepDescription {
-  color: white; /* Text color */
-  margin: 5px 0; /* Margin to separate title and description */
+  color: white;
+  margin: 5px 0;
 }
 
 .workflowStep .stepTitle {
-  font-size: 28px; /* Font size of the title */
-  font-weight: bold; /* Font weight of the title */
+  font-size: 28px;
+  font-weight: bold;
+  align-items: center;
 }
 
 .workflowStep .stepDescription {
-  font-size: 18px; /* Font size of the description */
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {

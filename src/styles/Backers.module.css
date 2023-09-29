@@ -10,8 +10,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: nowrap; /* Prevents the logos from wrapping into multiple lines */
-  max-width: 100%; /* Ensures that the grid takes the full width */
-  margin: 0 auto; /* Centers the grid */
+  max-width: 100%;
+  margin: 0 auto;
   margin-top: 10px;
 }
 
@@ -36,8 +36,8 @@
 .logo {
   height: 64px;
   width: auto;
-  filter: grayscale(100%); /* Makes the image grayscale */
-  transition: filter 0.3s ease; /* Smooth transition for the filter */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 
 .subtitle {

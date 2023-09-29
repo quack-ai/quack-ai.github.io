@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family:
+    Poppins,
     Inter,
     -apple-system,
     BlinkMacSystemFont,
@@ -15,6 +16,14 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/background.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 a {
