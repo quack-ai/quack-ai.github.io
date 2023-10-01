@@ -4,8 +4,8 @@ import Script from "next/script";
 const metaTitle = "Quack AI - Your companion for developer onboarding";
 const metaDescription =
   "Quack AI is your companion for developer onboarding. Simplify the onboarding process and improve productivity.";
-const metaUrl = "https://www.quack-ai.com/";
-const metaBanner = "https://www.quack-ai.com/social-banner.png";
+const metaUrl = "https://www.quackai.com/";
+const metaBanner = "https://www.quackai.com/social-banner.png";
 
 export default function Document() {
   return (
