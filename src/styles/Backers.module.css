@@ -9,7 +9,6 @@
 .logoGrid {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap; /* Prevents the logos from wrapping into multiple lines */
   max-width: 100%;
   margin: 0 auto;
   margin-top: 10px;
@@ -27,12 +26,6 @@
   filter: grayscale(0%); /* Returns the image to full color when hovered */
 }
 
-@media (max-width: 768px) {
-  .logoGrid {
-    flex-wrap: wrap; /* Allows the logos to wrap into multiple lines on smaller screens */
-  }
-}
-
 .logo {
   height: 64px;
   width: auto;
@@ -43,4 +36,23 @@
 .subtitle {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .logoGrid {
+    flex-wrap: wrap; /* Allows the logos to wrap into multiple lines on smaller screens */
+    flex-direction: column;
+    align-items: center;
+  }
+  .logoCard {
+    width: 100%; /* Full width for each logo card */
+    margin: 1rem 0; /* Adjust margin for vertical spacing */
+  }
+  .backedBySection {
+    padding: 0 20px; /* Adjust as needed */
+  }
+  .logo {
+    height: 48px; /* Adjust based on your preference */
+    width: auto; /* Maintain aspect ratio */
+  }
 }
