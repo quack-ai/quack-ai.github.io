@@ -29,15 +29,16 @@ const Hero: FC = () => {
               .typeString(
                 "<a href='https://marketplace.visualstudio.com/items?itemName=QuackAI.quack-companion'>companion</a>",
               )
-              .typeString(" for developer onboarding")
+              .typeString(" for dev team alignment")
               .start();
           }}
         />
       </h1>
 
       <p className={styles.description}>
-        Our VSCode extension guides developers through the best steps to make a
-        smooth contribution.
+        No more review hassle or tedious project gardening. Give shape &
+        consistency to your developer team&apos;s expectations with our VSCode
+        extension.
       </p>
 
       <div className={styles.grid}>
