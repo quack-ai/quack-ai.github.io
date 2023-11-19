@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FC, useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 
@@ -23,17 +24,25 @@ const Navbar: FC = () => {
         />
         <span className={styles.companyName}>Quack AI</span>
       </div>
-      <div className={styles.ctaButton}>
-        {isClient && (
-          <a
-            className={styles.githubButton}
-            href="https://github.com/quack-ai/companion"
-            aria-label="Star quack-ai/companion on GitHub"
-          >
-            <FaGithub className={styles.githubLogo} />
-            Star us on GitHub
-          </a>
-        )}
+      <div className={styles.navLinks}>
+        <Link href="#features">Features</Link>
+        {/* <Link href="/docs">Docs</Link> */}
+        {/* <Link href="/blog">Blog</Link> */}
+        <Link href="https://discord.gg/E9rY3bVCWd">Discord community</Link>
+      </div>
+      <div className={styles.authLinks}>
+        <div className={styles.ctaButton}>
+          {isClient && (
+            <a
+              className={styles.githubButton}
+              href="https://github.com/quack-ai/companion"
+              aria-label="Star quack-ai/companion on GitHub"
+            >
+              <FaGithub className={styles.githubLogo} />
+              Star us on GitHub
+            </a>
+          )}
+        </div>
       </div>
     </nav>
   );
