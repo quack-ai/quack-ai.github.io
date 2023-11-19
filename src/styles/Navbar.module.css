@@ -79,3 +79,39 @@
   /* You can adjust the font-size to change the size of the icon, if needed */
   font-size: 24px;
 }
+
+.navLinks {
+  display: flex;
+  gap: 20px; /* Adjust as needed */
+}
+
+.authLinks {
+  display: flex;
+  gap: 10px; /* Adjust as needed */
+}
+
+.signupButton {
+  background-color: #4caf50; /* Example color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signupButton:hover {
+  background-color: #45a049; /* Darker shade for hover effect */
+}
+
+@media (max-width: 768px) {
+  .navLinks,
+  .authLinks {
+    display: none; /* Hide links on smaller screens */
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+
+  /* Consider adding a menu icon for mobile here */
+}
