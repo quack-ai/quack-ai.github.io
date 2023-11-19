@@ -1,9 +1,9 @@
 import { Head, Html, Main, NextScript } from "next/document";
 import Script from "next/script";
 
-const metaTitle = "Quack AI - Your companion for developer onboarding";
+const metaTitle = "Quack AI - Your companion for software team alignment";
 const metaDescription =
-  "Quack AI is your companion for developer onboarding. Simplify the onboarding process and improve productivity.";
+  "Quack AI is your companion for software team alignment. Streamline collaboration and improve productivity.";
 const metaUrl = "https://www.quackai.com/";
 const metaBanner = "https://www.quackai.com/social-banner.png";
 

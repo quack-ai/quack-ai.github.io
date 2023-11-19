@@ -2,7 +2,7 @@ import styles from "../styles/Workflow.module.css";
 
 export default function Workflow() {
   return (
-    <section className={styles.workflowSection}>
+    <section className={styles.workflowSection} id="features">
       <div className={styles.grid}>
         <div className={styles.workflowStep}>
           <h2 className={styles.stepTitle}>1. Guideline curation</h2>

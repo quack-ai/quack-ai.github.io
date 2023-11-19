@@ -8,7 +8,7 @@ import styles from "../styles/Backers.module.css";
 
 const Backers: FC = () => {
   return (
-    <section className={styles.backedBySection}>
+    <section className={styles.backedBySection} id="backers">
       <p className={styles.subtitle}>Backed by</p>
       <div className={styles.logoGrid}>
         <a href="https://www.joinef.com/" className={styles.logoCard}>

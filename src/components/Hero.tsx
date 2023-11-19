@@ -29,7 +29,7 @@ const Hero: FC = () => {
               .typeString(
                 "<a href='https://marketplace.visualstudio.com/items?itemName=QuackAI.quack-companion'>companion</a>",
               )
-              .typeString(" for dev team alignment")
+              .typeString(" for software team alignment")
               .start();
           }}
         />
