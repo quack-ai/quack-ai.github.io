@@ -25,8 +25,8 @@ const Navbar: FC = () => {
         <span className={styles.companyName}>Quack AI</span>
       </div>
       <div className={styles.navLinks}>
-        <Link href="#features">Features</Link>
-        {/* <Link href="/docs">Docs</Link> */}
+        {/* <Link href="#features">Features</Link> */}
+        <Link href="https://docs.quackai.com">Documentation</Link>
         {/* <Link href="/blog">Blog</Link> */}
         <Link href="https://discord.gg/E9rY3bVCWd">Discord community</Link>
       </div>
