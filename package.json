@@ -30,11 +30,11 @@
   },
   "bugs": {
     "url": "https://github.com/quack-ai/quack-ai.github.io/issues",
-    "email": "support@quack-ai.com"
+    "email": "support@quackai.com"
   },
   "homepage": "https://quackai.com",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --ext .tsx",
