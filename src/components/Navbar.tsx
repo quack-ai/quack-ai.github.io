@@ -29,6 +29,9 @@ const Navbar: FC = () => {
         <Link href="https://docs.quackai.com">Documentation</Link>
         {/* <Link href="/blog">Blog</Link> */}
         <Link href="https://discord.gg/E9rY3bVCWd">Discord community</Link>
+        <Link href="https://www.ycombinator.com/companies/quack-ai/jobs">
+          Careers
+        </Link>
       </div>
       <div className={styles.authLinks}>
         <div className={styles.ctaButton}>
